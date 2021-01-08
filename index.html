@@ -4,9 +4,15 @@
 
 <head>
     
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7gwQtu3xmGnyjzmRMQ_mq0snQVnpaWaU&callback=initMap"
-  type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+	 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
     <script>
     	  var region = "";
     var country = "";
@@ -260,7 +266,7 @@ display:none;
 }
 </style>
 <body>
-
+<div class="separatore"></div>
 <form id="date">
 <script>
 var MesiT = ["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"];
@@ -276,7 +282,6 @@ document.write(date);
 
 </script>
 </form>
-
 <form id="regione">
 <p id="regionep"></p>
 </form>
@@ -285,12 +290,12 @@ document.write(date);
 <p id="testp"></p>
 </form>
 
-<button type="button" id="formButton">Regione sbagiata ?</button>
-
+<div class="footer">
+<button type="button" id="formButton"><u>Non è la tua regione?</u></button>
+</div>
 
 
 <form id="myForm">
-<h2 id="demo">Dicci la tua pietosa regione: </h2>
 Abruzzo<input type="radio" name="radioName" value="0" />
 <br />
 Basilicata  <input type="radio" name="radioName" value="1" />

@@ -1,36 +1,29 @@
 body {
     font-family: 'Playfair Display', serif;
+    width: 100vw;
+    height: 100vh;
 }
 
 
-
-.data {
-    width: 100%;
+#date {
+    width: 100vw;
     height: 3vh;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 #regione {
     width: 100vw;
     height: 15vh;
-}
-
-#regionep {
     text-align: center;
-    font-size: 8vw;
+    font-size: 7vw;
+    margin-top: 0vh;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 
 
-.cambio {
-    width: 49%;
-    height: 90%;
-    text-align: center;
-    font-size: 1vw;
-    display: inline-block;
-    cursor: zoom-in;
-}
 
 .credits {
     width: 49%;
@@ -42,5 +35,39 @@ body {
     
 }
 
+#testo {
+    margin-top: 3vh;
+}
 
+#formButton {
+    padding: 0;
+    border: none;
+    background: none;
+    margin-left: 20vw;
+    
+}
 
+.footer {
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    bottom: 0px;
+}
+
+.separatore {
+    width: 100vw;
+    height: 35vh;
+}
+
+#myForm {
+    margin-left: 3vw;
+    position: fixed;
+    top: 18vh;
+    font-size: 1vw;
+}
+
+p {
+    margin: 0;
+    
+    
+}
