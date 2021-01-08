@@ -5,7 +5,13 @@ body {
 
 .main {
     width: 100vw;
-    height: 90vh;
+    height: 30vh;
+    
+}
+
+.separatore {
+    width: 100vw;
+    height: 30vh;
     
 }
 
@@ -43,6 +49,7 @@ body {
     text-align: center;
     font-size: 1vw;
     display: inline-block;
+    
 }
 
 
