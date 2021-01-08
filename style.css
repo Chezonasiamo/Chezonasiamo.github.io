@@ -11,16 +11,16 @@ body {
 
 .data {
     width: 100%;
-    height: 20%;
+    height: 8%;
     text-align: center;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .regione {
     width: 100%;
-    height: 20%;
+    height: 15%;
     text-align: center;
-    font-size: 7vw;
+    font-size: 9vw;
 }
 
 .footer {
