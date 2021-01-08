@@ -1,21 +1,348 @@
 <!DOCTYPE html>
+<!--Developed by Neelis, Questo sito nasce da una bravata,è scritto male.. lo sappiamo, ma ci siamo divertiti a farlo, il processo ha impiegato poche ore siate buoni, State sani -->
 <html>
+
 <head>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script>
+    	  var region = "";
+    var country = "";
+    function getLocation()
+    {
+        
+        if (navigator.geolocation)
+          {
+             
+              navigator.geolocation.getCurrentPosition(showPosition);
+          }
+    }
+    function showPosition(position)
+    {
+        var geocoder = new google.maps.Geocoder();
+        var latlong = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+        geocoder.geocode({'latLng': latlong}, function(results, status) {
+              if (status == google.maps.GeocoderStatus.OK) {
+                  if (results[0]) {
+                    for (var i = 0; i < results[0].address_components.length; i++)
+                    {
+                        var longname = results[0].address_components[i].long_name;
+                        var type = results[0].address_components[i].types;
+                        if (type.indexOf("administrative_area_level_1") != -1)
+                        {
+                            region = longname;
+                             document.getElementById("regionep").innerHTML = region;
+                            
+                        }
+                      }
+              }
+            }
+        });
+      }
+
+    getLocation();
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+var d = new Date();
+var m = d.getMonth();
+var g = d.getDate();
+
+var dayAbruzzo = ["orange","yellow","red","orange","yellow","red","orange","red","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+
+/*var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+var day = ["orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","orange","yellow","red","red"];
+*/
+var mth = [day,day,day,day,day,day,day,day,day,day,day,day];
+var mthAbruzzo = [dayAbruzzo,dayAbruzzo,dayAbruzzo,dayAbruzzo,dayAbruzzo,dayAbruzzo,dayAbruzzo,dayAbruzzo,dayAbruzzo,dayAbruzzo,dayAbruzzo,dayAbruzzo];
+
+var rg1 = {
+  reg: "Abruzzo",
+  mth: mthAbruzzo
+};
+var rg2 = {
+  reg: "Basilicata",
+  mth: mth
+};
+
+var rg3 = {
+  reg: "Calabria",
+  mth: mth
+};
+
+var rg4 = {
+  reg: "Campania",
+  mth: mth
+};
+
+var rg5 = {
+  reg: "Emilia Romagna",
+  mth: mth
+};
+
+var rg6 = {
+  reg: "Friuli Venezia Giulia",
+  mth: mth
+};
+
+var rg7 = {
+  reg: "Lazio",
+  mth: mth
+};
+
+var rg8 = {
+  reg: "Liguria",
+  mth: mth
+};
+
+var rg9 = {
+  reg: "Lombardia",
+  mth: mth
+};
+
+var rg10 = {
+  reg: "Marche",
+  mth: mth
+};
+
+var rg11= {
+  reg: "Molise",
+  mth: mth
+};
+
+var rg12 = {
+  reg: "Piemonte",
+  mth: mth
+};
+
+var rg13 = {
+  reg: "Provincia Autonoma di Bolzano",
+  mth: mth
+};
+
+var rg14 = {
+  reg: "Provincia Autonoma di Trento",
+  mth: mth
+};
+
+var rg15 = {
+  reg: "Puglia",
+  mth: mth
+};
+
+var rg16 = {
+  reg: "Sardegna",
+  mth: mth
+};
+
+var rg17 = {
+  reg: "Sicilia",
+  mth: mth
+};
+
+var rg18 = {
+  reg: "Toscana",
+  mth: mth
+};
+
+var rg19 = {
+  reg: "Umbria",
+  mth: mth
+};
+
+var rg20 = {
+  reg: "Valle d'Aosta",
+  mth: mth
+};
+
+var rg21 = {
+  reg: "Veneto",
+  mth: mth
+};
+
+
+
+var regD = [rg1,rg2,rg3,rg4,rg5,rg6,rg7,rg8,rg9,rg10,rg11,rg12,rg13,rg14,rg15,rg16,rg17,rg18,rg19,rg20,rg21];
+
+
+var regioniT = [
+"Abruzzo ",
+"Basilicata ",
+"Calabria ",
+"Campania ",
+"Emilia Romagna ",
+"Friuli Venezia Giulia ",
+"Lazio ",
+"Liguria ",
+"Lombardia",
+"Marche ",
+"Molise ",
+"Piemonte ",
+"Provincia Autonoma di Bolzano ",
+"Provincia Autonoma di Trento ",
+"Puglia ",
+"Sardegna ",
+"Sicilia ",
+"Toscana ",
+"Umbria ",
+"Valle d'Aosta ",
+"Veneto"];
+
+
+
+
+
+$(document).ready(function(){
+ $('#myForm input').on('change', function() {
+   //alert($('input[name=radioName]:checked', '#myForm').val());
+    $("body").css("background-color", regD[$('input[name=radioName]:checked', '#myForm').val()].mth[m][g-1]);
+    $('#regione').empty();
+     $('<p>'+regioniT[$('input[name=radioName]:checked', '#myForm').val()]+'</p>').appendTo('#regione');;
+});
+});
+
+$(document).ready(function() {
+  $("#formButton").click(function() {
+    $("#myForm").toggle();
+  });
+});
+
+function regioneVal(regione){
+	
+	for (var i = 0; i < regioniT.length; i++){
+         if(regione == regioniT[i]){
+         	
+		return i;
+	}
+}
+}
+
+window.setInterval(function(){ 
+  var text = $('#regione').text();
+  text = text.trim();
+  var val = regioneVal(text);
+ 
+    $("body").css("background-color", regD[val].mth[m][g-1]);
+
+}, 500);
+
+
+
+</script>
+
 </head>
+<style type="text/css">
+	#myForm {
+
+display:none;
+
+}
+</style>
 <body>
-    <div class="separatore"></div>    
-<div class="main"> 
-    <div class="data" id="data"> 01 gennaio 2020</div>  
-    <div class="regione" id="regione"> REGIONE</div>
-</div>   
-<div class="separatore"></div>    
-<div class="footer"> 
-    <div class="cambio" id="cambio"><u>Non è questa la tua regione?</u></div>  
-    <div class="credits" id="credits"><u>Credits</u></div>
-</div>    
-    
+
+<form id="date">
+<script>
+var MesiT = ["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"];
+var d = new Date();
+var m = d.getMonth();
+
+
+var g = d.getDate();
+var a = d.getFullYear();
+
+var date = g+" "+" "+MesiT[m]+" "+a;
+document.write(date);
+
+</script>
+</form>
+
+<form id="regione">
+<p id="regionep"></p>
+</form>
+
+<form id="testo">
+<p class="testop" id="testp"></p>
+</form>
+
+<button type="button" id="formButton">Regione sbagiata ?</button>
+
+
+
+<form id="myForm">
+<h2 id="demo">Dicci la tua pietosa regione: </h2>
+Abruzzo<input type="radio" name="radioName" value="0" />
+<br />
+Basilicata  <input type="radio" name="radioName" value="1" />
+<br />
+Calabria  <input type="radio" name="radioName" value="2" />
+<br />
+Campania  <input type="radio" name="radioName" value=3 />
+<br />
+Emilia Romagna  <input type="radio" name="radioName" value="4" />
+<br />
+Friuli Venezia Giulia  <input type="radio" name="radioName" value="5" />
+<br />
+Lazio  <input type="radio" name="radioName" value="6" />
+<br />
+Liguria  <input type="radio" name="radioName" value="7" />
+<br />
+Lombardia  <input type="radio" name="radioName" value="8" />
+<br />
+Marche  <input type="radio" name="radioName" value="9" />
+<br />
+Molise  <input type="radio" name="radioName" value="10" />
+<br />
+Piemonte  <input type="radio" name="radioName" value="11" />
+<br />
+Provincia Autonoma di Bolzano  <input type="radio" name="radioName" value="12" />
+<br />
+Provincia Autonoma di Trento  <input type="radio" name="radioName" value="13" />
+<br />
+Puglia  <input type="radio" name="radioName" value="14" />
+<br />
+Sardegna  <input type="radio" name="radioName" value="15" />
+<br />
+Sicilia  <input type="radio" name="radioName" value="16" />
+<br />
+Toscana  <input type="radio" name="radioName" value="17" />
+<br />
+Umbria  <input type="radio" name="radioName" value="18" />
+<br />
+Valle d'Aosta  <input type="radio" name="radioName" value="19" />
+<br />
+Veneto   <input type="radio" name="radioName" value="20" />
+<br />
+
+</form>
+
+
+
 </body>
 </html>

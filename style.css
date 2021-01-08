@@ -1,19 +1,8 @@
 body {
-    background-color: #E74C3C;
     font-family: 'Playfair Display', serif;
 }
 
-.main {
-    width: 100vw;
-    height: 30vh;
-    
-}
 
-.separatore {
-    width: 100vw;
-    height: 29vh;
-    
-}
 
 .data {
     width: 100%;
@@ -22,18 +11,17 @@ body {
     font-size: 3vw;
 }
 
-.regione {
-    width: 100%;
+#regione {
+    width: 100vw;
     height: 15vh;
+}
+
+#regionep {
     text-align: center;
     font-size: 8vw;
 }
 
-.footer {
-    width: 100vw;
-    height: 8vh;
-    
-}
+
 
 .cambio {
     width: 49%;
