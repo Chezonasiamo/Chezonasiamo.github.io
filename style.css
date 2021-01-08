@@ -41,6 +41,7 @@ body {
     text-align: center;
     font-size: 1vw;
     display: inline-block;
+    cursor: zoom-in;
 }
 
 .credits {
@@ -52,5 +53,6 @@ body {
     cursor: help;
     
 }
+
 
 
