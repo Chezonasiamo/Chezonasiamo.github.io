@@ -3,17 +3,46 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-.data {
+.main {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
+    
+}
+
+.data {
+    width: 100%;
+    height: 20%;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 
 .regione {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 20%;
     text-align: center;
-    font-size: 10vw;
+    font-size: 7vw;
 }
+
+.footer {
+    width: 100vw;
+    height: 10vh;
+    
+}
+
+.cambio {
+    width: 40%;
+    height: 90%;
+    text-align: center;
+    font-size: 1vw;
+    display: inline-block;
+}
+
+.cambio {
+    width: 40%;
+    height: 90%;
+    text-align: center;
+    font-size: 1vw;
+    display: inline-block;
+}
+
 
