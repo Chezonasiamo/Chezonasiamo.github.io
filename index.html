@@ -179,6 +179,7 @@ var regioniT = [
 
 $(document).ready(function(){
  $('#myForm input').on('change', function() {
+  $("#myForm").toggle();
    //alert($('input[name=radioName]:checked', '#myForm').val());
     $("body").css("background-color", regD[$('input[name=radioName]:checked', '#myForm').val()].mth[m][g-1]);
     $('#regione').empty();
@@ -216,12 +217,12 @@ window.setInterval(function(){
 </script>
 
 </head>
-<style type="text/css">
+<!--<style type="text/css">
 	#myForm {
 
 display:none;
 
-}
+}-->
 </style>
 <body>
 <div class="separatore"></div>
@@ -249,11 +250,13 @@ document.write(date);
 </form>
 
 <div class="footer">
-<button type="button" id="formButton"><u>Seleziona la tua regione?</u></button>
+<button type="button" id="formButton"><u>Vuoi cambiare la regione?</u></button>
 </div>
 
 
 <form id="myForm">
+<p id="testoOCZS">Oggi Che Zona Siamo ?</p>
+<p id="testoSelRegione">Seleziona la tua regione: </p>
 Abruzzo<input type="radio" name="radioName" value="0" />
 <br />
 Basilicata  <input type="radio" name="radioName" value="1" />
