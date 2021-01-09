@@ -8,49 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
-	 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8Cb4ohR5vhL7t8pCKelN9V1Ot-G__ds8&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
-    <script>
-    	  var region = "";
-    var country = "";
-    function getLocation()
-    {
-        
-        if (navigator.geolocation)
-          {
-             
-              navigator.geolocation.getCurrentPosition(showPosition);
-          }
-    }
-    function showPosition(position)
-    {
-        var geocoder = new google.maps.Geocoder();
-        var latlong = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-        geocoder.geocode({'latLng': latlong}, function(results, status) {
-              if (status == google.maps.GeocoderStatus.OK) {
-                  if (results[0]) {
-                    for (var i = 0; i < results[0].address_components.length; i++)
-                    {
-                        var longname = results[0].address_components[i].long_name;
-                        var type = results[0].address_components[i].types;
-                        if (type.indexOf("administrative_area_level_1") != -1)
-                        {
-                            region = longname;
-                             document.getElementById("regionep").innerHTML = region;
-                            
-                        }
-                      }
-              }
-            }
-        });
-      }
-
-    getLocation();
-
-</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
 var d = new Date();
