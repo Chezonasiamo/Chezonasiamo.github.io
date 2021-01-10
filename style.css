@@ -153,7 +153,18 @@ p {
     height: 30vh;
 }
     
-
+.modal {
+    width: 80vw;
+    height: 60vh;
+    background-color: white;
+    border: 6px solid black;
+    position: fixed;
+    top: 15vh;
+    left: 20vw;
+    display: none;
+    z-index: 2;
+    
+}
     
     
 }
