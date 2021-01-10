@@ -210,16 +210,17 @@ p {
     
 #myForm {
     width: 60vw;
-    height: 80vh;
-    margin-left: 20vw;
+    height: 60vh;
+    margin-left: 17vw;
     top: 10vh;
     position: fixed;
-    font-size: 4.5vw;
+    font-size: 6vw;
     background-color: white;
     border: 6px solid black;
     padding: 1vw;
     padding-left: 5vw;
     padding-top: 2vh;
+    overflow: scroll;
     
 }
     
