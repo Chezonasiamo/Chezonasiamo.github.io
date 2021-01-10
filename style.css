@@ -209,9 +209,9 @@ p {
 }
     
 #myForm {
-    width: 60vw;
+    width: 75vw;
     height: 60vh;
-    margin-left: 17vw;
+    margin-left: 13vw;
     top: 10vh;
     position: fixed;
     font-size: 6vw;
