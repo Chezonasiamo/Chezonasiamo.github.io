@@ -47,6 +47,14 @@ body {
     
 }
 
+#creditsButton {
+    padding: 0;
+    border: none;
+    background: none;
+    margin-left: 40vw;
+    
+}
+
 .footer {
     width: 100vw;
     height: 10vh;
