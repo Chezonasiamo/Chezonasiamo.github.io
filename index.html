@@ -280,7 +280,20 @@ function regioneVal(regione){
 }, 500);*/
 
 
-
+$(document).ready(function() {
+  $("#creditsButton").click(function() {
+    $("#modal").toggle();
+  });
+});
+    
+$(document).ready(function() {
+  $("#chiudi").click(function() {
+    $("#modal").hide();
+  });
+});
+        
+    
+    
 </script>
 
 </head>
@@ -317,13 +330,19 @@ document.write(date);
 </form>
 
 <div class="footer">
-<button type="button" id="formButton"><u>Vuoi cambiare la regione?</u></button>
+<button type="button" id="formButton"><u>Cambia regione</u></button>
     <button type="button" id="creditsButton"><u>Credits</u></button>
 </div>
+    
+<div class="modal" id="modal">
+    <div class="chiudi" id="chiudi"></div>
+    <div class="titoloModal">CHE ZONA SIAMO?</div>
+    <div class="testoModal"><br>Il governo non vuole che sappiate la verità<br><br>
+        Questo è un progetto per tutti e libramente utilizzabile, senza pretese e totalmente gratuito, pensato per questo periodo in cui tutti dobbiamo darci una mano.<br><br>credits<br>nomecognome<br>nomecognome<br>nomecognome <br>nomecognome</div>
+</div>    
 
 
 <form id="myForm">
-<p id="testoOCZS">Oggi Che Zona Siamo ?</p>
 <p id="testoSelRegione">Seleziona la tua regione: </p>
 <span style="display:block; height:5px;"></span>
 Abruzzo<input type="radio" name="radioName" value="0" />
