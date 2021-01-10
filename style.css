@@ -161,7 +161,7 @@ p {
     background-color: white;
     border: 6px solid black;
     position: fixed;
-    top: 15vh;
+    top: 10vh;
     left: 5vw;
     display: none;
     z-index: 2;
