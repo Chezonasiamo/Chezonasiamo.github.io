@@ -128,9 +128,7 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    background-color: brown;
-  }
+  
     
     #regione {
     width: 100vw;
