@@ -17,6 +17,10 @@ body {
     
 }
 
+a{
+    color:black;
+}
+
 #date {
     width: 100vw;
     height: 3vh;
