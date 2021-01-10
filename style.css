@@ -224,10 +224,11 @@ p {
     
 }
     
-    input[type="checkbox"]{
-  width: 100px; /*Desired width*/
-  height: 100px; /*Desired height*/
+    input[type="radio"]{
+  width: 200px; /*Desired width*/
+  height: 200px; /*Desired height*/
   cursor: pointer;
+  background-color: black;
   -webkit-appearance: none;
   appearance: none;
 }
