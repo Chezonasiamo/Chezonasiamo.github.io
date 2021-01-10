@@ -225,10 +225,9 @@ p {
 }
     
     input[type="radio"]{
-  width: 200px; /*Desired width*/
-  height: 200px; /*Desired height*/
+  width: 50px; /*Desired width*/
+  height: 50px; /*Desired height*/
   cursor: pointer;
-  background-color: black;
   -webkit-appearance: none;
   appearance: none;
 }
