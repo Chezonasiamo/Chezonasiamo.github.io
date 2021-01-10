@@ -5,6 +5,17 @@ body {
     overflow: hidden;
 }
 
+.nomesito{
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    font-size: 1.7vw;
+    position: fixed;
+    padding-top: 2vh;
+    
+    
+    
+}
 
 #date {
     width: 100vw;
@@ -231,5 +242,13 @@ p {
   -webkit-appearance: none;
   appearance: none;
 }
+    
+    .nomesito{
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    font-size: 4vw;
+    position: fixed;
+    padding-top: 2vh;
     
 }
