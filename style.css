@@ -128,7 +128,9 @@ p {
 }
 
 @media screen and (max-width: 1080px) {
-  
+    body {
+        overflow: hidden;
+    }
     
     #regione {
     width: 100vw;
@@ -168,12 +170,12 @@ p {
     
     #formButton {
     font-size: 3vh;
-    margin-left: 6vw;
+    margin-left: 8vw;
 }
     
     #creditsButton {
     font-size: 3vh;
-        margin-left: 15vw;
+        margin-left: 20vw;
     
 }
     
