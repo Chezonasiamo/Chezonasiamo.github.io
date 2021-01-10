@@ -157,11 +157,11 @@ p {
     
 .modal {
     width: 90vw;
-    height: 90vh;
+    height: 70vh;
     background-color: white;
     border: 6px solid black;
     position: fixed;
-    top: 5vh;
+    top: 15vh;
     left: 5vw;
     display: none;
     z-index: 2;
@@ -222,6 +222,14 @@ p {
     padding-top: 2vh;
     overflow: scroll;
     
+}
+    
+    input[type="checkbox"]{
+  width: 100px; /*Desired width*/
+  height: 100px; /*Desired height*/
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
 }
     
 }
