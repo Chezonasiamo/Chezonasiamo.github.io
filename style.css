@@ -124,4 +124,38 @@ p {
     position: absolute;
     right: 1.5vw;
     top: 2vh;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: brown;
+  }
+    
+    #regione {
+    width: 100vw;
+    height: 15vh;
+    text-align: center;
+    font-size: 10vw;
+    margin-top: 0vh;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+    
+    #date {
+    width: 100vw;
+    margin-top: 0vh;
+    height: 5vh;
+    text-align: center;
+    font-size: 5vw;
+}
+    
+    .separatore {
+    width: 100vw;
+    height: 30vh;
+}
+    
+
+    
+    
 }
