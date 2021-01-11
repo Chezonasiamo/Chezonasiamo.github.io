@@ -266,7 +266,9 @@ $(document).ready(function(){
    //alert($('input[name=radioName]:checked', '#myForm').val());
     $("body").css("background-color", regD[$('input[name=radioName]:checked', '#myForm').val()].mth[m][g-1]);
     $('#regione').empty();
-     $('<p>'+regioniT[$('input[name=radioName]:checked', '#myForm').val()]+'</p>').appendTo('#regione');;
+     $('<p>'+regioniT[$('input[name=radioName]:checked', '#myForm').val()]+'</p>').appendTo('#regione');
+     $("#faq").show(); 
+      
 });
 });
 
@@ -274,6 +276,7 @@ $(document).ready(function() {
   $("#formButton").click(function() {
     $("#myForm").toggle();
     $("#modal").hide();
+    $("#modal2").hide();  
   });
 });
 
@@ -301,6 +304,7 @@ $(document).ready(function() {
   $("#creditsButton").click(function() {
     $("#modal").toggle();
     $("#myform").hide();
+    $("#modal2").hide();  
   });
 });
     
@@ -317,6 +321,13 @@ $(document).ready(function() {
 
   });
 });
+    
+$(document).ready(function() {
+  $("#chiudi3").click(function() {
+    $("#myForm").hide();
+
+  });
+});    
     
 
 
@@ -359,6 +370,8 @@ $(document).ready(function() {
              $(".testoModalA").hide();
               $(".testoModalB").hide();
                $(".testoModalC").hide();
+               $("#modal").hide();
+      
 
                if(colore.trim() == yellow.trim()){
                 
@@ -448,7 +461,7 @@ document.write(date);
     
 <div class="modal2" id="modal2">
     <div class="chiudi2" id="chiudi2"></div>
-    <div class="titoloModal2">QUINDI COSA POSSO FARE?</div>
+    <div class="titoloModal2" id="titoloModal2">QUINDI COSA POSSO FARE?</div>
     <div class="testoModalA"><br><b><u>ZONA GIALLA</b></u><br><br>
 
 <ul class="a">
@@ -510,7 +523,8 @@ Per maggiori informazioni visita <a href="http://www.governo.it/it/articolo/doma
     </div>
 
 <form id="myForm">
-<p id="testoSelRegione"><b>Seleziona la tua regione:</b> </p>
+<div class="chiudi3" id="chiudi3"></div> 
+<div id="testoSelRegione"><b>SELEZIONA LA REGIONE</b> </div>   
 <span style="display:block; height:5px;"></span>
 Abruzzo<input type="radio" name="radioName" value="0" />
 <br />

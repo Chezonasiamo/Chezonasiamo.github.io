@@ -23,6 +23,7 @@ body {
     font-size: 2.5vw;
     position: fixed;
     bottom: 22vh;
+    display: none;
 }
 
 a{
@@ -110,13 +111,17 @@ a{
 }
 
 #myForm {
-    margin-left: 39vw;
+    margin-left: 34vw;
     top: 10vh;
     position: fixed;
     font-size: 1.3vw;
     background-color: white;
     border: 6px solid black;
-    padding: 3vw;
+    padding-right: 6vw;
+    padding-left: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+    z-index: 5;
     
 }
 
@@ -189,6 +194,7 @@ p {
     font-size: 3vw;
     font-weight: bold;
     padding-top: 2vh;
+
 }
 
 .testoModalA {
@@ -217,9 +223,9 @@ p {
 
 }
 
-.chiudi {
-    width: 4vw;
-    height: 4vw;
+.chiudi3 {
+    width: 3vw;
+    height: 3vw;
     background-image: url("https://i.ibb.co/CPqyRwd/Group-2.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -244,6 +250,28 @@ p {
 ul.a {
   list-style-type: square;
 }
+
+#testoSelRegione {
+    font-size: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1080px) {
     body {
@@ -421,29 +449,47 @@ ul.a {
     
     .testoModalA {
     width: 90%;
-    height: 90%;
+    height: 95%;
     text-align: left;
-    font-size: 2vw;
+    font-size: 3.2vw;
     padding-left: 5%;
+
 
 }
 
 .testoModalB {
     width: 90%;
-    height: 90%;
+    height: 95%;
     text-align: left;
-    font-size: 2vw;
+    font-size: 3.2vw;
     padding-left: 5%;
+
 
 }
 
 .testoModalC {
     width: 90%;
-    height: 90%;
+    height: 95%;
     text-align: left;
-    font-size: 2vw;
+    font-size: 3.2vw;
     padding-left: 5%;
 
 }
+    
+    .chiudi3 {
+    width: 7vw;
+    height: 7vw;
+    background-image: url("https://i.ibb.co/CPqyRwd/Group-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 1.5vw;
+    top: 2vh;
+    cursor: pointer;
+}
+    
+#testoSelRegione {
+    font-size: 5.1vw;
+}    
 
 }
