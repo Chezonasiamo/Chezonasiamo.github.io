@@ -211,18 +211,20 @@ p {
     width: 100vw;
     height: 15vh;
     text-align: center;
-    font-size: 10vw;
-    margin-top: 0vh;
+    font-size: 13vw;
+    top: 33vh;
     text-transform: uppercase;
     font-weight: 500;
+    position: fixed;
 }
     
     #date {
     width: 100vw;
-    margin-top: 0vh;
+    top: 30vh;
     height: 5vh;
     text-align: center;
     font-size: 5vw;
+    position: fixed;
 }
     
     .separatore {
@@ -259,11 +261,13 @@ p {
     #formButton {
     font-size: 3vh;
     margin-left: 10vw;
+    position: fixed;
 }
     
     #creditsButton {
     font-size: 3vh;
-        margin-left: 23vw;
+        left: 23vw;
+        position: fixed;
     
 }
     
