@@ -17,51 +17,54 @@
 var d = new Date();
 var m = d.getMonth();
 var g = d.getDate();
+var red = "#e74c3c";
+var orange = "#e67e22";
+var yellow = "#f1c40f";
 
-var dayAbruzzo = ["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#e67e22","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
+var dayAbruzzo = [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
 
-var dayBasilicata = ["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"," #e67e22","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
+var dayBasilicata = [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow, orange ,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
 
-var dayToscana = ["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"," #e67e22","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
+var dayToscana = [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow, orange ,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
 
-var dayCalabria = ["#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22"];
+var dayCalabria = [orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange];
 
-var dayCampania = ["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"," #e67e22 ","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
+var dayCampania = [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow, orange ,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
 
-var dayEmiliaromagna = ["#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22"];
+var dayEmiliaromagna = [orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange];
 
 var dayLazio = 
-["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#e67e22","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
+[yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
 
-var dayFriuli = ["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#e67e22","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
+var dayFriuli = [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
 
-var dayLiguria = ["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#e67e22","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
+var dayLiguria = [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
 
-var dayLombardia = ["#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22"];
-
-
-var dayMarche = ["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#e67e22","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
-
-var dayPiemonte = ["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#e67e22","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
-
-var dayBolzano = ["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#e67e22","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
-
-var dayTrento = ["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#e67e22","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
-
-var dayPuglia = ["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#e67e22","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
-
-var daySardegna = ["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#e67e22","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
-
-var daySicilia = ["#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22"];
-
-var dayUmbria = ["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#e67e22","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
-
-var dayValleAosta = ["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#e67e22","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
-
-var dayVeneto = ["#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22","#e67e22"];
+var dayLombardia = [orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange];
 
 
-var dayMolise = ["#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#e67e22","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f","#f1c40f"];
+var dayMarche = [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
+
+var dayPiemonte = [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
+
+var dayBolzano = [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
+
+var dayTrento = [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
+
+var dayPuglia = [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
+
+var daySardegna = [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
+
+var daySicilia = [orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange];
+
+var dayUmbria = [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
+
+var dayValleAosta = [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
+
+var dayVeneto = [orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange];
+
+
+var dayMolise = [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
 
 
 
