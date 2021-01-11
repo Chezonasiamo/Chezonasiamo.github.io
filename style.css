@@ -332,13 +332,13 @@ ul.a {
 }
     
     #formButton {
-    font-size: 3vh;
+    font-size: 3.5vw;
     margin-left: 10vw;
     position: fixed;
 }
     
     #creditsButton {
-    font-size: 3vh;
+    font-size: 3.5vw;
         left: 23vw;
         position: fixed;
     
@@ -409,7 +409,6 @@ ul.a {
     width: 100vw;
     height: 10vh;
     text-align: center;
-    font-size: 5vw;
     position: fixed;
     padding-top: 2vh; 
     bottom: 21vh;
@@ -421,7 +420,7 @@ ul.a {
     border: none;
     background: none;
     font-family: 'Playfair Display', serif !important;
-    font-size: 4vw;
+    font-size: 5vw;
     cursor: pointer;
     
 }
