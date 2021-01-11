@@ -5,9 +5,7 @@ body {
     overflow: hidden;
 }
 
-.entry-header .entry-title {
-    display: none;
-}
+
 
 .nomesito{
     width: 100vw;
@@ -179,12 +177,30 @@ p {
     padding-top: 2vh;
 }
 
-.testoModal2 {
-    width: 90%;
-    height: 70%;
+.testoModalA {
+    width: 28%;
+    height: 95%;
     text-align: left;
     font-size: 1vw;
     padding-left: 5%;
+    display: inline-block;
+}
+
+.testoModalB {
+    width: 28%;
+    height: 95%;
+    text-align: left;
+    font-size: 1vw;
+    padding-left: 5%;
+    display: inline-block;
+}
+
+.testoModalC {
+    width: 28%;
+    height: 95%;
+    text-align: left;
+    font-size: 1vw;
+    display: inline-block;
 }
 
 .chiudi {
