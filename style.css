@@ -259,14 +259,15 @@ p {
     
 .modal {
     width: 90vw;
-    height: 70vh;
+    height: 80vh;
     background-color: white;
     border: 6px solid black;
     position: fixed;
-    top: 10vh;
+    top: 8vh;
     left: 5vw;
     display: none;
     z-index: 2;
+    overflow: scroll;
     
 }
     
@@ -309,7 +310,7 @@ p {
     width: 90%;
     height: 70%;
     text-align: center;
-    font-size: 4vw;
+    font-size: 3.5vw;
     padding-left: 5%;
 }
 
