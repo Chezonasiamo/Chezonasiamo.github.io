@@ -20,10 +20,9 @@ body {
     width: 100vw;
     height: 10vh;
     text-align: center;
-    font-size: 1.7vw;
+    font-size: 2.5vw;
     position: fixed;
-    padding-top: 2vh; 
-    bottom: 17vh;
+    bottom: 22vh;
 }
 
 a{
@@ -73,6 +72,18 @@ a{
     border: none;
     background: none;
     margin-left: 20vw;
+    font-family: 'Playfair Display', serif !important;
+    cursor: pointer;
+    
+}
+
+#CPFButton {
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 1.8vw;
+    cursor: pointer;
     
 }
 
@@ -80,7 +91,9 @@ a{
     padding: 0;
     border: none;
     background: none;
-    margin-left: 45vw;
+    margin-left: 47vw;
+    font-family: 'Playfair Display', serif !important;
+    cursor: pointer;
     
 }
 
@@ -97,13 +110,13 @@ a{
 }
 
 #myForm {
-    margin-left: 40vw;
-    top: 11vh;
+    margin-left: 39vw;
+    top: 10vh;
     position: fixed;
     font-size: 1.3vw;
     background-color: white;
     border: 6px solid black;
-    padding: 4vw;
+    padding: 3vw;
     
 }
 
@@ -128,13 +141,13 @@ p {
 }
 
  .modal2 {
-    width: 90vw;
-    height: 70vh;
+    width: 70vw;
+    height: 80vh;
     background-color: white;
     border: 6px solid black;
     position: fixed;
     top: 10vh;
-    left: 5vw;
+    left: 15vw;
     display: none;
     z-index: 2;
     
@@ -179,29 +192,29 @@ p {
 }
 
 .testoModalA {
-    width: 28%;
-    height: 95%;
+    width: 90%;
+    height: 90%;
     text-align: left;
     font-size: 1vw;
     padding-left: 5%;
-    display: inline-block;
+
 }
 
 .testoModalB {
-    width: 28%;
-    height: 95%;
+    width: 90%;
+    height: 90%;
     text-align: left;
     font-size: 1vw;
     padding-left: 5%;
-    display: inline-block;
+
 }
 
 .testoModalC {
-    width: 28%;
-    height: 95%;
+    width: 90%;
+    height: 90%;
     text-align: left;
     font-size: 1vw;
-    display: inline-block;
+
 }
 
 .chiudi {
@@ -226,6 +239,10 @@ p {
     right: 1.5vw;
     top: 2vh;
     cursor: pointer;
+}
+
+ul.a {
+  list-style-type: square;
 }
 
 @media screen and (max-width: 1080px) {
@@ -274,7 +291,7 @@ p {
     
     .modal2 {
     width: 90vw;
-    height: 70vh;
+    height: 75vh;
     background-color: white;
     border: 6px solid black;
     position: fixed;
@@ -282,6 +299,7 @@ p {
     left: 5vw;
     display: none;
     z-index: 2;
+    overflow: scroll;
     
 }
     
@@ -366,6 +384,66 @@ p {
     font-size: 5vw;
     position: fixed;
     padding-top: 2vh; 
-    bottom: 22vh;
+    bottom: 21vh;
 }
+    
+    #CPFButton {
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 4vw;
+    cursor: pointer;
+    
+}
+    
+    .titoloModal2 {
+    width: 100%;
+    height: 8%;
+    text-align: left;
+    font-size: 5.1vw;
+    font-weight: bold;
+    padding-top: 2vh;
+    padding-left: 5%;
+}
+    
+.chiudi2 {
+    width: 7vw;
+    height: 7vw;
+    background-image: url("https://i.ibb.co/CPqyRwd/Group-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 2vw;
+    top: 2vh;
+    cursor: pointer;
+}
+    
+    .testoModalA {
+    width: 90%;
+    height: 90%;
+    text-align: left;
+    font-size: 2vw;
+    padding-left: 5%;
+
+}
+
+.testoModalB {
+    width: 90%;
+    height: 90%;
+    text-align: left;
+    font-size: 2vw;
+    padding-left: 5%;
+
+}
+
+.testoModalC {
+    width: 90%;
+    height: 90%;
+    text-align: left;
+    font-size: 2vw;
+    padding-left: 5%;
+
+}
+
 }

@@ -2,7 +2,7 @@
 
 <html>
 
-<!-- Ciao cosa stai cercando qui? Non mi sembra il caso di guardare sotto la gonna del nostro sito in questo modo però.. vabbe. ormai seui qui fai pure, divertiti. Ah e se riesci a modificare qualche allinemanto già che ci sei grazie. un saluto, grandissimo, 5 stelle su 5. -->
+<!-- Ciao cosa stai cercando qui? Non mi sembra il caso di guardare sotto i vestiti del nostro sito in questo modo però.. vabbe. ormai sei qui fai pure, divertiti. Ah e se riesci a modificare qualche allinemanto già che ci sei grazie. un saluto, grandissimo, 5 stelle su 5. -->
     
 <head>
     
@@ -304,11 +304,82 @@ $(document).ready(function() {
   });
 });
     
+
 $(document).ready(function() {
   $("#chiudi").click(function() {
     $("#modal").hide();
   });
 });
+    
+$(document).ready(function() {
+  $("#chiudi2").click(function() {
+    $("#modal2").hide();
+
+  });
+});
+    
+
+
+/*        
+window.onload = function() {
+
+         
+          var a = document.getElementById("mylink");
+
+          a.onclick = function() {
+          var colore = regD[$('input[name=radioName]:checked', '#myForm').val()].mth[m][g-1];
+
+           window.alert("test");
+
+           window.alert(colore);
+           window.alert(yellow);
+        
+            $("#modal2").toggle();
+             $(".testoModalA").hide();
+              $(".testoModalB").hide();
+               $(".testoModalC").hide();
+
+               if(color == yellow){
+                window.alert("entra");
+                $(".testoModalA").show();
+              }
+          
+            return false;
+          }
+        }
+*/
+
+$(document).ready(function() {
+  $("#CPFButton").click(function() {
+        var colore = regD[$('input[name=radioName]:checked', '#myForm').val()].mth[m][g-1];
+
+       
+        
+            $("#modal2").toggle();
+             $(".testoModalA").hide();
+              $(".testoModalB").hide();
+               $(".testoModalC").hide();
+
+               if(colore.trim() == yellow.trim()){
+                
+                $(".testoModalA").show();
+              }
+              if(colore.trim() == red.trim()){
+               
+                $(".testoModalC").show();
+              }
+              if(colore.trim() == orange.trim()){
+               
+                $(".testoModalB").show();
+              }
+              /*  if(colore.trim() == white.trim()){
+                window.alert("entra");
+                $(".testoModalB").show();
+              }*/
+
+  });
+  });
+
     
 
     
@@ -352,17 +423,17 @@ document.write(date);
 <p id="testp"></p>
 </form>
 
-    <div class="faq" id="faq"><u><a href="http://www.governo.it/it/faq-natale" target="_blank">Quindi cosa posso fare?</a></u></div>    
+    <div class="faq" id="faq"><u><button type="button" id="CPFButton"><u>Quindi cosa posso fare?</u></button></u></div>    
 <div class="footer">
 <button type="button" id="formButton"><u>Cambia regione</u></button>
-    <button type="button" id="creditsButton"><u>Credits</u></button>
+    <button type="button" id="creditsButton"><u>About</u></button>
 </div>
     
 <div class="modal" id="modal">
     <div class="chiudi" id="chiudi"></div>
     <div class="titoloModal">CHE ZONA SIAMO?</div>
     <div class="testoModal"><br>Semplicemente per fare chiarezza.<br><br>
-        Questo è un progetto per tutti e liberamente utilizzabile, senza pretese e totalmente gratuito, pensato per questo periodo in cui tutti dobbiamo darci una mano.<br><i>"chezonasiamo"</i> è stato ideato da cittadini e non ha collegamenti con iniziative governative o regionali. I dati relativi al colore delle regioni si basano sulle indicazioni ufficiali consultabili liberamente da tutti sul sito <a href="http://www.governo.it">www.governo.it.</a><br><br><br><b>credits</b><br>
+        Questo è un progetto per tutti e liberamente utilizzabile, senza pretese e totalmente gratuito, pensato per questo periodo in cui tutti dobbiamo darci una mano.<br><i>"chezonasiamo"</i> è stato ideato da cittadini e non ha collegamenti con iniziative governative o regionali. I dati relativi al colore delle regioni si basano sulle indicazioni ufficiali consultabili liberamente da tutti sul sito <a href="http://www.governo.it" target="_blank">www.governo.it.</a><br><br><br><b>Credits</b><br>
         
     <a href="https://www.linkedin.com/in/andrea-diano/">Ciaosonoandrea</a><br>
     
@@ -377,67 +448,66 @@ document.write(date);
     
 <div class="modal2" id="modal2">
     <div class="chiudi2" id="chiudi2"></div>
-    <div class="titoloModal2">COSA PUOI FARE?</div>
-    <div class="testoModalA"><br>GIALLA<br>
+    <div class="titoloModal2">QUINDI COSA POSSO FARE?</div>
+    <div class="testoModalA"><br><b><u>ZONA GIALLA</b></u><br><br>
 
-MASCHERINA ATTIVA (Mascherina obbligatoria all'aperto e in luoghi chiusi, tranne per bambini al di sotto dei 6 anni, durante attività sportiva, soggetti con patologie o disabilità incompatibili con l'uso della mascherina)<br>
+<ul class="a">
+<li>COPRIFUOCO ATTIVO (Autocertificazione sempre richiesta dalle 22:00 alle 05:00)<br><br></li>
+ 
+<li>NO spostamenti tra regioni (ad eccezione di quelli dovuti a motivi di lavoro, salute o necessità)<br><br></li>
+ 
+<li>SI spostamenti tra comuni<br><br></li>
+ 
+<li>SI rientro alla propria residenza, domicilio o abitazione (escluse le seconde case)<br><br></li>
+ 
+<li>SI attività motoria nel proprio comune di residenza/domicilio<br><br></li>
+ 
+<li>SI parrucchieri e centri estetici<br><br></li>
+ 
+<li>SI Chiesa<br><br></li>
 
-COPRIFUOCO ATTIVO [Autocertificazione sempre richiesta dalle 22:00 alle 05:00 (ore di coprifuoco) e per spostamenti verso zone arancioni o rosse]<br>
+<li>APERTI Bar, Ristoranti, Pub, Gelateria e Pasticcerie fino alle ore 18:00 (SI asporto fino alle ore 22:00)<br><br></li>
+ 
+<li>CHIUSI Centri commerciali prefestivi e festivi<br><br></li>
+ 
+<li>APERTI negozi fino alle ore 22:00<br><br></li>
+</ul>    
 
-NO spostamenti tra regioni (ad eccezione di quelli dovuti a motivi di lavoro, salute o necessità)
-SI spostamenti tra comuni<br>
-É consentito il rientro alla propria residenza, domicilio o abitazione (escluse le seconde case)<br>
+Per maggiori informazioni visita <a href="http://www.governo.it/it/articolo/domande-frequenti-sulle-misure-adottate-dal-governo/15638#zone" target="_blank"><i>www.governo.it</i></a>
+    </div>
 
-SI attività motoria nel proprio comune di residenza/domicilio<br>
+<div class="testoModalB"><br><b><u>ZONA ARANCIONE</b></u><br><br>
 
-SI Parrucchieri e centri estetici<br>
-
-SI Chiesa<br>
-
-APERTI Bar, Ristoranti, Pub, Gelateria e Pasticcerie fino alle ore 18:00 (SI asporto fino alle ore 22:00)
-CHIUSI Centri commerciali prefestivi e festivi
-        APERTI negozi fino alle ore 22:00<br><br></div>
-
-
-<div class="testoModalB"><br>ARANCIONE<br>
-
-MASCHERINA ATTIVA (Mascherina obbligatoria all'aperto e in luoghi chiusi, tranne per bambini al di sotto dei 6 anni, durante attività sportiva, soggetti con patologie o disabilità incompatibili con l'uso della mascherina)<br>
-
-COPRIFUOCO ATTIVO [Autocertificazione sempre richiesta dalle 22:00 alle 05:00 (ore di coprifuoco) e per spostamenti verso zone arancioni o rosse]<br>
-
-NO spostamenti tra regione (ad eccezione di quelli dovuti a motivi di lavoro, salute o necessità)
-NO spostamenti tra comuni (tranne i piccoli comuni con max 5mila abitanti saranno consentiti spostamenti in un raggio di 30km con divieto di spostamento nei capoluoghi di provincia)<br>
-É consentito il rientro alla propria residenza, domicilio o abitazione (escluse le seconde case)<br>
-
-SI attività motoria nel proprio comune di residenza/domicilio<br>
-
-SI Parrucchieri e centri estetici<br>
-
-SI Chiesa<br>
-
-CHIUSI Bar, Ristoranti, Pub, Gelateria e Pasticcerie (SI asporto fino alle ore 22:00)
-CHIUSI Centri commerciali prefestivi e festivi
-    APERTI negozi fino alle ore 22:00    <br></div>
+<ul class="a">    
+<li>COPRIFUOCO ATTIVO (Autocertificazione sempre richiesta dalle 22:00 alle 05:00)<br><br></li>
+ 
+<li>NO spostamenti tra regione (ad eccezione di quelli dovuti a motivi di lavoro, salute o necessità)<br><br></li>
+ 
+<li>NO spostamenti tra comuni (tranne piccoli comuni max 5mila abitanti - raggio di 30km / NO capoluoghi di provincia)<br><br></li>
+ 
+<li>SI rientro alla propria residenza, domicilio o abitazione (escluse le seconde case)<br><br></li>
+ 
+<li>SI attività motoria nel proprio comune di residenza/domicilio<br><br></li>
+ 
+<li>SI parrucchieri e centri estetici<br><br></li>
+ 
+<li>SI Chiesa<br><br></li>
+ 
+<li>CHIUSI Bar, Ristoranti, Pub, Gelateria e Pasticcerie (SI asporto fino alle ore 22:00)<br><br></li>
+ 
+<li>CHIUSI Centri commerciali prefestivi e festivi<br><br></li>
+ 
+<li>APERTI negozi fino alle ore 22:00<br><br></li> 
+</ul>
+Per maggiori informazioni visita <a href="http://www.governo.it/it/articolo/domande-frequenti-sulle-misure-adottate-dal-governo/15638#zone" target="_blank"><i>www.governo.it</i></a>    
+    
+    </div>
     
 <div class="testoModalC">  
-    MASCHERINA ATTIVA (Mascherina obbligatoria all'aperto e in luoghi chiusi, tranne per bambini al di sotto dei 6 anni, durante attività sportiva, soggetti con patologie o disabilità incompatibili con l'uso della mascherina)<br>
-
-COPRIFUOCO ATTIVO [Autocertificazione sempre richiesta dalle 22:00 alle 05:00 (ore di coprifuoco) e per spostamenti verso zone arancioni o rosse]<br>
-
-NO spostamenti tra regione (ad eccezione di quelli dovuti a motivi di lavoro, salute o necessità)
-NO spostamenti tra comuni (tranne i piccoli comuni con max 5mila abitanti saranno consentiti spostamenti in un raggio di 30km con divieto di spostamento nei capoluoghi di provincia)<br>
-É consentito il rientro alla propria residenza, domicilio o abitazione (escluse le seconde case)<br>
-
-SI attività motoria nel proprio comune di residenza/domicilio<br>
-
-SI Parrucchieri e centri estetici<br>
-
-SI Chiesa<br>
-
-CHIUSI Bar, Ristoranti, Pub, Gelateria e Pasticcerie (SI asporto fino alle ore 22:00)
-CHIUSI Centri commerciali prefestivi e festivi
-    APERTI negozi fino alle ore 22:00
-    </div></div>
+    <br><b><u>ZONA ROSSA</b></u><br><br>
+    </div>
+    
+    </div>
 
 <form id="myForm">
 <p id="testoSelRegione"><b>Seleziona la tua regione:</b> </p>
