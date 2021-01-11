@@ -5,6 +5,10 @@ body {
     overflow: hidden;
 }
 
+.entry-header .entry-title {
+    display: none;
+}
+
 .nomesito{
     width: 100vw;
     height: 10vh;
