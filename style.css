@@ -345,8 +345,6 @@ p {
   width: 50px; /*Desired width*/
   height: 50px; /*Desired height*/
   cursor: pointer;
-  -webkit-appearance: none;
-  appearance: none;
 }
     
     .nomesito{
