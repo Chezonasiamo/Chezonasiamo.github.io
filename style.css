@@ -12,6 +12,7 @@ body {
     font-size: 1.7vw;
     position: fixed;
     padding-top: 2vh; 
+    
 }
 .faq{
     width: 100vw;
@@ -25,6 +26,10 @@ body {
 
 a{
     color:black;
+}
+
+#silvano {
+    text-decoration: none;
 }
 
 #date {
