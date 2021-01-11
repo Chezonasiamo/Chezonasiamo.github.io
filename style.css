@@ -413,6 +413,7 @@ ul.a {
     position: fixed;
     padding-top: 2vh; 
     bottom: 21vh;
+    display: none;
 }
     
     #CPFButton {
