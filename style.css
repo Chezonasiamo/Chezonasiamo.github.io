@@ -307,7 +307,7 @@ ul.a {
     width: 90vw;
     height: 80vh;
     background-color: white;
-    border: 6px solid black;
+    border: 4px solid black;
     position: fixed;
     top: 8vh;
     left: 5vw;
@@ -321,7 +321,7 @@ ul.a {
     width: 90vw;
     height: 75vh;
     background-color: white;
-    border: 6px solid black;
+    border: 4px solid black;
     position: fixed;
     top: 10vh;
     left: 5vw;
@@ -384,7 +384,7 @@ ul.a {
     position: fixed;
     font-size: 6vw;
     background-color: white;
-    border: 6px solid black;
+    border: 4px solid black;
     padding: 1vw;
     padding-left: 5vw;
     padding-top: 2vh;
