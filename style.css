@@ -393,8 +393,8 @@ ul.a {
 }
     
     input[type="radio"]{
-  width: 50px; /*Desired width*/
-  height: 50px; /*Desired height*/
+  width: 5vw; /*Desired width*/
+  height: 5vw; /*Desired height*/
   cursor: pointer;
 }
     
