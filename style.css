@@ -36,7 +36,7 @@ a{
 
 #date {
     width: 100vw;
-    height: 3vh;
+    height: 4vh;
     text-align: center;
     font-size: 2.5vw;
 }
@@ -253,6 +253,31 @@ ul.a {
 
 #testoSelRegione {
     font-size: 2vw;
+}
+
+.avanti {
+    top:38vh;
+    right:34.5vw;
+    position: fixed;
+    background-image: url("https://i.ibb.co/6cMXKjR/avanti2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 4vw;
+    height: 4vh;
+    z-index: 2;
+}
+
+.indietro {
+    top:38vh;
+    left:36vw;
+    position: fixed;
+    background-image: url("https://i.ibb.co/6cMXKjR/avanti2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform:rotate(180deg);
+    width: 4vw;
+    height: 4vh;
+    z-index: 2;
 }
 
 
@@ -496,5 +521,31 @@ ul.a {
 #testoSelRegione {
     font-size: 5.1vw;
 }    
+    
+    .avanti {
+    top:30.85vh;
+    right:23.5vw;
+    position: fixed;
+    background-image: url("https://i.ibb.co/wMQ7T53/freccia4-01-01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    z-index: 2;
+}
+
+.indietro {
+    top:30.85vh;
+    left:24.5vw;
+    position: fixed;
+    background-image: url("https://i.ibb.co/wMQ7T53/freccia4-01-01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform:rotate(180deg);
+    width: 5vw;
+    height: 5vw;
+    z-index: 2;
+}
+
 
 }

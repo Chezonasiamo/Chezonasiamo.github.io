@@ -271,6 +271,9 @@ $(document).ready(function(){
     $("body").css("background-color", regD[$('input[name=radioName]:checked', '#myForm').val()].mth[m][g-1]);
     $('#regione').empty();
      $('<p>'+regioniT[$('input[name=radioName]:checked', '#myForm').val()]+'</p>').appendTo('#regione');
+     $("#date").text(date);
+     $("#avanti").show();
+     $("#indietro").hide();
      $("#faq").show(); 
       
 });
@@ -399,7 +402,33 @@ $(document).ready(function() {
 
     
 
+
+
+
+$(document).ready(function() {
+  $("#avanti").click(function() {
+        var g2 = d.getDate()+1;
+        var date2 = g2+" "+" "+MesiT[m]+" "+a;
+      
+        $("body").css("background-color", regD[$('input[name=radioName]:checked', '#myForm').val()].mth[m][g]);
+        $("#date").text(date2);
+        $("#avanti").hide();
+        $("#indietro").show();
+
+  });
+  });  
     
+$(document).ready(function() {
+  $("#indietro").click(function() {
+        
+      
+        $("body").css("background-color", regD[$('input[name=radioName]:checked', '#myForm').val()].mth[m][g-1]);
+        $("#date").text(date);
+      $("#indietro").hide();
+      $("#avanti").show();
+
+  });
+  });        
 
     
     
@@ -417,6 +446,7 @@ display:none;
 <div class="separatore">
     <div class="nomesito"><a id="silvano" href="/">Che Zona Siamo?</a></div>
     </div>
+<div class="indietro" id="indietro"></div>        
 <form id="date">
 <script>
 var MesiT = ["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"];
@@ -432,6 +462,7 @@ document.write(date);
 
 </script>
 </form>
+<div class="avanti" id="avanti"></div>    
 <form id="regione">
 <p id="regionep"></p>
 </form>
@@ -449,20 +480,26 @@ document.write(date);
 <div class="modal" id="modal">
     <div class="chiudi" id="chiudi"></div>
     <div class="titoloModal">CHE ZONA SIAMO?</div>
-    <div class="testoModal">Semplicemente per fare chiarezza.<br><br>
-        Questo è un progetto per tutti e liberamente utilizzabile, senza pretese e totalmente gratuito, pensato per questo periodo in cui tutti dobbiamo darci una mano.<br><i>"chezonasiamo"</i> è stato ideato da cittadini e non ha collegamenti con iniziative governative o regionali. I dati relativi al colore delle regioni si basano sulle indicazioni ufficiali consultabili liberamente da tutti sul sito <a href="https://www.governo.it" target="_blank">www.governo.it.</a><br><br><br><b>Credits</b><br>
+    <div class="testoModal"><br>
         
-    <a href="https://www.linkedin.com/in/andrea-diano/">Andrea Diano</a><br>
-    
-    <a href="https://www.linkedin.com/in/federico-diano/">Federico Diano</a><br>
-        
+Che zona siamo è un progetto libramente utilizzabile e totalmente gratuito, auto-prodotto e auto-finanziato da 5 ragazzi che volevano solo fare la propria parte in un periodo in cui tutti dobbiamo darci una mano.<br><br>
+Se ti è piaciuto il sito è vuoi supportarci ti chiediamo solo una cosa: <b>condividerlo e aiutarci così a farlo conoscere a tutti!</b> Perché in un periodo come questo la consapevolezza fa la differenza, e diffondere informazione giuste è compito di ognuno di noi.<br><br>
+
+<b>Credits</b><br>
+<a href="https://www.linkedin.com/in/andrea-diano/">Andrea Diano</a><br>
+
+    <a href="https://www.linkedin.com/in/federico-diano">Federico Diano</a><br>
+
     <a href="mailto:neelis.studio@gmail.com">Lorenzo Neglia</a><br>
-    
+
         <a href="https://www.instagram.com/diegomorra/?hl=it">Diego Morra</a><br>
-    
-        <a href="https://instagram.com/gazza.jpg?igshid=a72q3d74moxc">Luca Gazzaniga</a><br><br>
-    
-    Per info, segnalazioni e suggerimenti <a href="mailto:chezonasiamo@gmail.com">contattaci</a>
+
+        <a href="https://instagram.com/gazza.jpg?igshid=a72q3d74moxc">Luca Gazzaniga</a><br><br>       
+        
+<i>"chezonasiamo"</i> è stato ideato da cittadini e non ha collegamenti con iniziative governative o regionali. I dati relativi al colore delle regioni si basano sulle indicazioni ufficiali consultabili liberamente da tutti sul sito <a href="https://www.governo.it/" target="_blank">www.governo.it.</a><br><br>
+
+Per info, segnalazioni e suggerimenti <a href="mailto:chezonasiamo@gmail.com">contattaci</a><br><br>
+        
 </div></div>    
     
 <div class="modal2" id="modal2">
@@ -471,7 +508,7 @@ document.write(date);
     <div class="testoModalA"><br><b><u>ZONA GIALLA</b></u><br><br>
 
 <ul class="a">
-<li>COPRIFUOCO ATTIVO (Autocertificazione sempre richiesta dalle 22:00 alle 05:00)<br><br></li>
+<li>COPRIFUOCO ATTIVO (<a href="https://www.ticonsiglio.com/wp-content/uploads/2020/05/autocertificazione-covid-editabile-ottobre-2020.pdf" target="_blank">Autocertificazione</a> sempre richiesta dalle 22:00 alle 05:00)<br><br></li>
  
 <li>NO spostamenti tra regioni (ad eccezione di quelli dovuti a motivi di lavoro, salute o necessità)<br><br></li>
  
@@ -498,7 +535,7 @@ Per maggiori informazioni visita <a href="https://www.governo.it/it/articolo/dom
 <div class="testoModalB"><br><b><u>ZONA ARANCIONE</b></u><br><br>
 
 <ul class="a">    
-<li>COPRIFUOCO ATTIVO (Autocertificazione sempre richiesta dalle 22:00 alle 05:00)<br><br></li>
+    <li>COPRIFUOCO ATTIVO (<a href="https://www.ticonsiglio.com/wp-content/uploads/2020/05/autocertificazione-covid-editabile-ottobre-2020.pdf" target="_blank">Autocertificazione</a> sempre richiesta dalle 22:00 alle 05:00)<br><br></li>
  
 <li>NO spostamenti tra regione (ad eccezione di quelli dovuti a motivi di lavoro, salute o necessità)<br><br></li>
  
