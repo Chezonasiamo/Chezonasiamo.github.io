@@ -155,6 +155,8 @@ p {
     left: 15vw;
     display: none;
     z-index: 2;
+    overflow-x: hidden;
+      overflow-y: scroll; 
     
 }
 
@@ -220,6 +222,7 @@ p {
     height: 90%;
     text-align: left;
     font-size: 1vw;
+    padding-left: 5%;
 
 }
 
