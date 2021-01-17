@@ -456,8 +456,31 @@ $(document).ready(function() {
       
 
   });
-  });        
+  });  
 
+/*
+$(document).ready(function() {   
+$("#app").click(function() {
+  $("#menu").animate({
+    height: "100vh",
+    opacity: 1,
+
+  }, 500 );
+    $("#menu").show();
+});
+});
+    
+$(document).ready(function() {   
+$("#chiudi4").click(function() {
+  $("#menu").animate({
+    height: "0vh",
+    opacity: 0,
+
+  }, 500 );
+    $("#menu").hide();
+});
+});    
+*/
     
     
 </script>
@@ -471,6 +494,20 @@ display:none;
 }-->
 </style>
 <body>
+    
+<div class="app" id="app">Scarica<br>App</div>    
+    
+<div class="menu" id="menu">
+   <div class="chiudi4" id="chiudi4"></div>
+    <div class="android"></div>
+    <div class="ios"></div>
+
+    
+    
+    
+</div>   
+    
+    
 <div class="separatore">
     <div class="nomesito"><a id="silvano" href="/">Che Zona Siamo?</a></div>
     </div>
@@ -536,7 +573,7 @@ Per info, segnalazioni e suggerimenti <a href="mailto:chezonasiamo@gmail.com">co
     <div class="testoModalA"><br><b><u>ZONA GIALLA</b></u><br><br>
 
 <ul class="a">
-<li>COPRIFUOCO ATTIVO (dalle 22:00 alle 05:00)<br><br></li>
+<li>COPRIFUOCO ATTIVO (<a href="https://www.interno.gov.it/sites/default/files/2020-10/modello_autodichiarazione_editabile_ottobre_2020.pdf" target="_blank">Autocertificazione</a> sempre richiesta dalle 22:00 alle 05:00)<br><br></li>
  
 <li>NO Spostamenti tra regioni e province autonome (ad eccezione di quelli dovuti a motivi di lavoro, salute o necessità)<br><br></li>
  
@@ -558,7 +595,7 @@ Per info, segnalazioni e suggerimenti <a href="mailto:chezonasiamo@gmail.com">co
 
 <li>CHIUSI Cinema, palestre e piscine<br><br></li>
     
-<li>APERTI negozi fino alle ore 22:00<br><br></li>     
+<li>APERTI negozi fino alle ore 20:00<br><br></li>     
 </ul>    
 
 Per maggiori informazioni visita <a href="https://www.governo.it/it/articolo/domande-frequenti-sulle-misure-adottate-dal-governo/15638#zone" target="_blank"><i>www.governo.it</i></a><br><br><br>
@@ -571,7 +608,7 @@ Per maggiori informazioni visita <a href="https://www.governo.it/it/articolo/dom
  
 <li>NO Spostamenti tra regione e province autonome (ad eccezione di quelli dovuti a motivi di lavoro, salute o necessità)<br><br></li>
  
-<li>NO Spostamenti tra comuni (tranne piccoli comuni max 5mila abitanti - raggio di 30km / NO capoluoghi di provincia)<br><br></li>
+<li>NO Spostamenti tra comuni (ad eccezione di quelli dovuti a motivi di lavoro, salute o necessità - salvo deroghe Comuni sotto 5mila abitanti)<br><br></li>
  
 <li>SI Rientro alla propria residenza, domicilio o abitazione (escluse le seconde case)<br><br></li>
  
@@ -589,7 +626,7 @@ Per maggiori informazioni visita <a href="https://www.governo.it/it/articolo/dom
     
 <li>CHIUSI Musei, cinema, palestre e piscine<br><br></li>    
     
-<li>APERTI Negozi fino alle ore 21:00<br><br></li>  
+<li>APERTI Negozi fino alle ore 20:00<br><br></li>  
     
 </ul>
 Per maggiori informazioni visita <a href="https://www.governo.it/it/articolo/domande-frequenti-sulle-misure-adottate-dal-governo/15638#zone" target="_blank"><i>www.governo.it</i></a><br><br>

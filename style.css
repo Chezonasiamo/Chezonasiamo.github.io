@@ -292,7 +292,79 @@ ul.a {
     text-decoration: none;
 }
 
+.menu {
+    position: fixed;
+    height: 0vh;
+    width: 100vw;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    border: 6px solid black;
+    opacity: 0;
+    display: none;
+    
+}
 
+.app {
+    position: fixed;
+    height: 7vh;
+    width: 3vw;
+    right: 2vw;
+    top: 0vh;
+    z-index: 10;
+    background-color: black;
+    border: 6px solid black;
+    text-align: center;
+    font-size: 0.8vw;
+    font-weight: bold;
+    line-height: 18px;
+    padding-top: 4vh;
+    color: white;
+    display: none;
+
+
+    
+}
+
+.chiudi4 {
+    width: 4vw;
+    height: 4vw;
+    background-image: url("https://i.ibb.co/CPqyRwd/Group-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 1.5vw;
+    top: 2vh;
+    cursor: pointer;
+        display: none;
+}
+
+.android {
+    width: 40vw;
+    height: 50vh;
+    background-image: url("https://i.ibb.co/M7B859D/afcc7dd829be97c8e5eeb76ec40a86ff.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 25vh;
+    margin-left: 5vw;
+    cursor: pointer;
+    display: inline-block;
+        display: none;
+}
+
+.ios {
+    width: 30vw;
+    height: 50vh;
+    background-image: url("https://i.ibb.co/mhG55gc/b73e62da299075cc73f9c02dc081804a.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10vw;
+        margin-top: 25vh;
+    cursor: pointer;
+        display: inline-block;
+        display: none;
+}
 
 
 
