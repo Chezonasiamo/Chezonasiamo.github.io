@@ -299,8 +299,7 @@ ul.a {
     right: 0;
     top: 0;
     z-index: 10;
-    background-color: white;
-    border: 6px solid black;
+    background-color: #FBFBFB;
     opacity: 0;
     display: none;
     
@@ -308,22 +307,15 @@ ul.a {
 
 .app {
     position: fixed;
-    height: 7vh;
-    width: 3vw;
-    right: 2vw;
+    height: 12vh;
+    width: 9vw;
+    right: 1vw;
     top: 0vh;
     z-index: 10;
-    background-color: black;
-    border: 6px solid black;
-    text-align: center;
-    font-size: 0.8vw;
-    font-weight: bold;
-    line-height: 18px;
-    padding-top: 4vh;
-    color: white;
+    background-image: url("https://i.ibb.co/hDnDMcy/lingua.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     display: none;
-
-
     
 }
 
@@ -337,34 +329,93 @@ ul.a {
     right: 1.5vw;
     top: 2vh;
     cursor: pointer;
-        display: none;
-}
 
-.android {
-    width: 40vw;
-    height: 50vh;
-    background-image: url("https://i.ibb.co/M7B859D/afcc7dd829be97c8e5eeb76ec40a86ff.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 25vh;
-    margin-left: 5vw;
-    cursor: pointer;
-    display: inline-block;
-        display: none;
 }
 
 .ios {
-    width: 30vw;
-    height: 50vh;
-    background-image: url("https://i.ibb.co/mhG55gc/b73e62da299075cc73f9c02dc081804a.png");
+    width: 40%;
+    height: 60%;
+    background-image: url("https://i.ibb.co/rZT3hK8/Iphone-Vid.gif");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 10vw;
-        margin-top: 25vh;
-    cursor: pointer;
-        display: inline-block;
-        display: none;
+    margin-top: 5%;
+    margin-left: 10%;
+    display: inline-block;
+
 }
+
+.android {
+    width: 40%;
+    height: 60%;
+    background-image: url("https://i.ibb.co/MBwRjdk/Android-Vid.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    margin-left: 7%;
+    display: inline-block;
+
+}
+
+.titoloApp {
+    width: 100%;
+    font-size: 3vw;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 2%;
+    display: block;
+    
+}
+
+.testoApp{
+    width: 100%;
+    margin-top: 1%;
+}
+
+.androidText {
+    width: 49%;
+    text-align: center;
+    font-size: 1.5vw;
+    display: inline-block;
+}
+
+.iosText {
+    width: 49%;
+    text-align: center;
+    font-size: 1.5vw;
+    display: inline-block;
+}
+
+.androidTextMobile {
+    width: 49%;
+    text-align: center;
+    font-size: 1.5vw;
+    display: inline-block;
+    display: none;
+}
+
+.iosTextMobile {
+    width: 49%;
+    text-align: center;
+    font-size: 1.5vw;
+    display: inline-block;
+    display: none;
+}  
+
+.spaziofondo {
+    width: 100%;
+        height: 10%;
+        display: none;
+    }
+
+.titoloAppMobile {
+    width: 100%;
+    font-size: 6vw;
+    font-weight: bold;
+    padding-top: 2%;
+    display: none;
+}
+
+
 
 
 
@@ -418,7 +469,7 @@ ul.a {
     top: 8vh;
     left: 5vw;
     display: none;
-    z-index: 2;
+    z-index: 6;
     overflow-x: hidden;
       overflow-y: scroll;
     
@@ -433,7 +484,7 @@ ul.a {
     top: 10vh;
     left: 5vw;
     display: none;
-    z-index: 2;
+    z-index: 6;
       overflow-x: hidden;
       overflow-y: scroll;
     
@@ -629,5 +680,133 @@ ul.a {
     z-index: 2;
 }
 
+.app {
+    position: fixed;
+    height: 13vh;
+    width: 12vw;
+    right: 8vw;
+    top: 0vh;
+    z-index: 5;
+    background-image: url("https://i.ibb.co/J5spttx/lingua-Mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+    
+}
+    
+.chiudi4 {
+    width: 7vw;
+    height: 7vw;
+    background-image: url("https://i.ibb.co/CPqyRwd/Group-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 3.5vw;
+    top: 2.5vh;
+    cursor: pointer;    
 
+}
+    
+    .menu {
+    position: fixed;
+    height: 0vh;
+    width: 102vw;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background-color: #FBFBFB;
+    opacity: 0;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+    
+.ios {
+    width: 100%;
+    height: 45%;
+    background-image: url("https://i.ibb.co/rZT3hK8/Iphone-Vid.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    margin-left: 10%;
+
+}
+
+.android {
+    width: 100%;
+    height: 45%;
+    background-image: url("https://i.ibb.co/MBwRjdk/Android-Vid.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    margin-left: 10%;
+
+}
+
+.titoloApp {
+    width: 100%;
+    font-size: 6vw;
+    font-weight: bold;
+    padding-top: 2%;
+    display: none;
+    
+}    
+    
+.titoloAppMobile {
+    width: 100%;
+    font-size: 7vw;
+    font-weight: bold;
+    padding-top: 2%;
+    display: block;
+    margin-left: 4vw;
+}
+
+.testoApp{
+    width: 100%;
+    margin-top: 2%;
+    display: none;
+}
+
+.androidText {
+    width: 49%;
+    text-align: center;
+    font-size: 1.5vw;
+    display: inline-block;
+    display: none;
+}
+
+.iosText {
+    width: 49%;
+    text-align: center;
+    font-size: 1.5vw;
+    display: inline-block;
+    display: none;
+} 
+    
+.androidTextMobile {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5vw;
+    display: block;
+    font-weight: bold;
+
+}
+
+.iosTextMobile {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5vw;
+    display: block;
+    font-weight: bold;
+
+
+}     
+    
+    .spaziofondo {
+    width: 100%;
+        height: 10%;
+        display: block;
+    }
+    
 }
