@@ -729,7 +729,7 @@ ul.a {
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 0;
 
 }
 
@@ -740,7 +740,7 @@ ul.a {
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 0;
 
 }
 
