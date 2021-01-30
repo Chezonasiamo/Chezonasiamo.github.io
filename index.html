@@ -287,7 +287,7 @@ $(document).ready(function(){
     $('#regione').empty();
      $('<p>'+regioniT[$('input[name=radioName]:checked', '#myForm').val()]+'</p>').appendTo('#regione');
      $("#date").text(date);
-     $("#avanti").show();
+     $("#avanti").hide();
      $("#indietro").hide();
      $("#faq").show(); 
     $("#app").show();
@@ -443,8 +443,8 @@ if (!domani){
 
 
 
-
-$(document).ready(function() {
+/*
+ $(document).ready(function() {
   $("#avanti").click(function() {
         var g2 = d.getDate()+1;
         var date2 = g2+" "+" "+MesiT[m]+" "+a;
@@ -472,7 +472,7 @@ $(document).ready(function() {
 
   });
   });  
-
+*/
 
 $(document).ready(function() {   
 $("#app").click(function() {
