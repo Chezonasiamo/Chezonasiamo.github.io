@@ -226,6 +226,15 @@ p {
 
 }
 
+.testoModalE {
+    width: 90%;
+    height: 90%;
+    text-align: left;
+    font-size: 1vw;
+    padding-left: 5%;
+
+}
+
 .chiudi3 {
     width: 3vw;
     height: 3vw;
@@ -632,6 +641,15 @@ ul.a {
 }
 
 .testoModalC {
+    width: 90%;
+    height: 95%;
+    text-align: left;
+    font-size: 3.3vw;
+    padding-left: 5%;
+
+}
+    
+    .testoModalE {
     width: 90%;
     height: 95%;
     text-align: left;
