@@ -464,13 +464,33 @@ if (!domani){
 
 
 
-
  $(document).ready(function() {
   $("#avanti").click(function() {
+      var check = [31,28,31,30,31,30,31,31,30,31,30,31];
+       
         var g2 = d.getDate()+1;
-        var date2 = g2+" "+" "+MesiT[m]+" "+a;
+        
+        var date2;
+        var mAus = m;
+        var gAus = g2;
+        if(g2>=check[m]){
+            if(m == 11){
+               mAus = 0;
+               a++;
+            }else{
+               mAus++;
+            }
+            gAus = 1;
+            date2 = gAus+" "+" "+MesiT[mAus]+" "+a;
+
+        }else{
+        
+            date2 = gAus+" "+" "+MesiT[mAus]+" "+a;
+        }
+
+        
       
-        $("body").css("background-color", regD[$('input[name=radioName]:checked', '#myForm').val()].mth[m][g]);
+        $("body").css("background-color", regD[$('input[name=radioName]:checked', '#myForm').val()].mth[mAus][gAus-1]);
         $("#date").text(date2);
         $("#avanti").hide();
         $("#indietro").show();
@@ -483,7 +503,7 @@ if (!domani){
 $(document).ready(function() {
   $("#indietro").click(function() {
         
-      
+       
         $("body").css("background-color", regD[$('input[name=radioName]:checked', '#myForm').val()].mth[m][g-1]);
         $("#date").text(date);
       $("#indietro").hide();
