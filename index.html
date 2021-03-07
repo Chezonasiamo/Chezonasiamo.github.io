@@ -41,12 +41,13 @@ var red = "#e74c3c";
 var orange = "#e67e22";
 var yellow = "#f1c40f";
 var white = "#ffffff";
+var darkor = "#A13F00";
 
 var dayAbruzzo = 
 [orange,orange,orange,orange,orange,orange,orange,orange,orange, orange ,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange];
 
 var dayBasilicata = 
-[red,red,red,red,red,red,red,red,red, red ,red,red,red,red,red,red,red,red,red,red,red, red, red, red, red, red, red, red, red, red, red];
+[red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red, red, red, red, red, red, red, red, red, red, red];
 
 var dayToscana = 
 [orange,orange,orange,orange,orange,orange,orange,orange,orange, orange ,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange];
@@ -55,7 +56,7 @@ var dayCalabria =
 [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow, yellow ,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
 
 var dayCampania = 
-[orange,orange,orange,orange,orange,orange,orange,orange,orange, orange ,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange];
+[orange,orange,orange,orange,orange,orange,orange,red,red,red,red,red,red,red,red,red,red,red,red,red,red, red, red, red, red, red, red, red, red, red, red];
 
 var dayEmiliaromagna = 
 [orange,orange,orange,orange,orange,orange,orange,orange,orange, orange ,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange];
@@ -64,21 +65,21 @@ var dayLazio =
 [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow, yellow ,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
 
 var dayFriuli = 
-[yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow, yellow ,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
+[yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,orange, orange ,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange];
 
 var dayLiguria = 
 [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow, yellow ,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow, yellow,yellow,yellow,yellow,yellow,yellow];
 
 
 var dayLombardia = 
-[orange,orange,orange,orange,orange,orange,orange,orange,orange, orange ,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange];
+[orange,orange,orange,orange,orange,orange,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor];
 
 
 var dayMarche = 
 [orange,orange,orange,orange,orange,orange,orange,orange,orange, orange ,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange];
 
 var dayPiemonte = 
-[orange,orange,orange,orange,orange,orange,orange,orange,orange, orange ,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange];
+[orange,orange,orange,orange,orange,orange,orange,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor,darkor];
 
 var dayBolzano = 
 [orange,orange,orange,orange,orange,orange,orange,orange,orange, orange ,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange];
@@ -99,11 +100,13 @@ var dayValleAosta =
 [yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow, yellow ,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,orange];
 
 var dayVeneto = 
-[yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow, yellow ,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow,yellow];
+[yellow,yellow,yellow,yellow,yellow,yellow,yellow,orange,orange, orange ,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange,orange];
 
 
 var dayMolise =
-[red,red,red,red,red,red,red,red,red, red ,red,red,red,red,red,red,red,red,red,red,red, red, red, red, red, red, red, red, red, red, red];
+[red,red,red,red,red,red,red,red,red, red ,red,red,red,red,red,red,red,red,red,red,red, red, red, red, red, red, red, red, red, red, red];    
+
+
 
 
 
@@ -427,6 +430,11 @@ if (!domani){
                
                 $(".testoModalE").show();
               }
+
+               if(colore.trim() == darkor.trim()){
+               
+                $(".testoModalF").show();
+              }
               /*  if(colore.trim() == white.trim()){
                 window.alert("entra");
                 $(".testoModalB").show();
@@ -448,6 +456,10 @@ if (!domani){
               if(colore.trim() == white.trim()){
                
                 $(".testoModalE").show();
+              }
+              if(colore.trim() == darkor.trim()){
+               
+                $(".testoModalF").show();
               }
               /*  if(colore.trim() == white.trim()){
                 window.alert("entra");
@@ -765,7 +777,42 @@ Per maggiori informazioni visita <a href="https://www.governo.it/it/articolo/dom
     
     Per maggiori informazioni visita <a href="https://www.governo.it/it/articolo/domande-frequenti-sulle-misure-adottate-dal-governo/15638#zone" target="_blank"><i>www.governo.it</i></a><br><br><br>
     </div>
+
+<div class="testoModalF"><br><b><u>ZONA ARANCIONE RINFORZATA</b></u><br><br>
+<b><u>ATTENZIONE ! Verifica sempre che il colore del tuo comune corrisponda con il colore della tua regione.</u></b><br>
+
+<ul class="a">    
+    <li>COPRIFUOCO ATTIVO (dalle 22:00 alle 05:00) <a href="https://www.interno.gov.it/sites/default/files/2020-10/modello_autodichiarazione_editabile_ottobre_2020.pdf" target="_blank">Autocertificazione</a> sempre richiesta<br><br></li>
+ 
+<li>NO Spostamenti tra regione e province autonome fino al 27 marzo 2021 (ad eccezione di quelli dovuti a motivi di lavoro, salute o necessità)<br><br></li>
+ 
+<li>NO Spostamenti tra comuni (ad eccezione di quelli dovuti a motivi di lavoro, salute o necessità - salvo deroghe Comuni sotto 5mila abitanti)<br><br></li>
+ 
+<li>SI Rientro alla propria residenza, domicilio o abitazione (NO seconde case)<br><br></li>
+ 
+<li>SI Ricevere max 2 persone (sono esclusi i minori di 14 anni o disabili) - max 1 volta al giorno (all'interno del proprio comune di residenza/domicilio - salvo deroghe Comuni sotto 5mila abitanti)<br><br></li>
     
+<li>SI Ricongiungimento tra partner consentito presso il luogo corrispondente a quello di residenza, domicilio o abitazione della coppia, escluse seconde case e hotel<br><br></li>    
+    
+<li>NO Seconde case<br><br></li>      
+ 
+<li>SI Attività motoria nel proprio comune di residenza/domicilio<br><br></li>
+ 
+<li>SI Parrucchieri // NO Centri estetici<br><br></li>
+ 
+<li>SI Chiesa<br><br></li>
+ 
+<li>CHIUSI Bar (asporto fino alle ore 18:00) Ristoranti, Gelateria e Pasticcerie (asporto fino alle ore 22:00)<br><br></li>
+ 
+<li>APERTI Centri commerciali (Da lunedì a venerdì // CHIUSI prefestivi e festivi)<br><br></li> 
+    
+<li>CHIUSI Musei, cinema, palestre e piscine<br><br></li>    
+    
+<li>APERTI Negozi<br><br></li>  
+    
+</ul>
+Per maggiori informazioni visita <a href="https://www.governo.it/it/articolo/domande-frequenti-sulle-misure-adottate-dal-governo/15638#zone" target="_blank"><i>www.governo.it</i></a><br><br>
+</div>
  </div>
 
 <form id="myForm">
