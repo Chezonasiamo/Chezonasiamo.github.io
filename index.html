@@ -295,6 +295,9 @@ var regioniT = [
 
 $(document).ready(function(){
  $('#myForm input').on('change', function() {
+     
+     var coloreZ = regD[$('input[name=radioName]:checked', '#myForm').val()].mth[m][g-1];
+     
   $("#myForm").toggle();
    //alert($('input[name=radioName]:checked', '#myForm').val());
     $("body").css("background-color", regD[$('input[name=radioName]:checked', '#myForm').val()].mth[m][g-1]);
@@ -305,6 +308,37 @@ $(document).ready(function(){
      $("#indietro").hide();
      $("#faq").show(); 
     $("#app").show();
+     
+     if(coloreZ.trim() == yellow.trim()){
+                
+                $(".coloreZona").text('Zona gialla');
+
+              }
+              if(coloreZ.trim() == red.trim()){
+               
+                $(".coloreZona").text('Zona rossa');
+
+              }
+     
+              if(coloreZ.trim() == orange.trim()){
+               
+                $(".coloreZona").text('Zona arancione');
+           
+              }
+    
+              if(coloreZ.trim() == white.trim()){
+               
+                $(".coloreZona").text('Zona bianca');
+
+              }
+
+               if(coloreZ.trim() == darkor.trim()){
+               
+                 $(".coloreZona").text('Zona arancione rinforzato');
+            
+              }
+     
+      
       
 });
 });
@@ -417,24 +451,29 @@ if (!domani){
                if(colore.trim() == yellow.trim()){
                 
                 $(".testoModalA").show();
+
               }
               if(colore.trim() == red.trim()){
                
                 $(".testoModalC").show();
+
               }
               if(colore.trim() == orange.trim()){
                
                 $(".testoModalB").show();
+           
               }
     
               if(colore.trim() == white.trim()){
                
                 $(".testoModalE").show();
+
               }
 
                if(colore.trim() == darkor.trim()){
                
                 $(".testoModalF").show();
+            
               }
               /*  if(colore.trim() == white.trim()){
                 window.alert("entra");
@@ -445,22 +484,28 @@ if (!domani){
                if(colore.trim() == yellow.trim()){
                 
                 $(".testoModalA").show();
+ 
+                
               }
               if(colore.trim() == red.trim()){
                
                 $(".testoModalC").show();
+         
               }
               if(colore.trim() == orange.trim()){
                
                 $(".testoModalB").show();
+              
               }
               if(colore.trim() == white.trim()){
                
                 $(".testoModalE").show();
+           
               }
               if(colore.trim() == darkor.trim()){
                
                 $(".testoModalF").show();
+                
               }
               /*  if(colore.trim() == white.trim()){
                 window.alert("entra");
@@ -588,7 +633,8 @@ display:none;
 <div class="separatore">
     <div class="nomesito"><a id="silvano" href="/">Che Zona Siamo?</a></div>
     </div>
-<div class="indietro" id="indietro"></div>        
+<div class="indietro" id="indietro"></div>  
+
 <form id="date">
 <script>
 var MesiT = ["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"];
@@ -608,6 +654,8 @@ document.write(date);
 <form id="regione">
 <p id="regionep"></p>
 </form>
+    
+<div class="coloreZona"> ZONA BLU</div>
 
 <form id="testo">
 <p id="testp"></p>
@@ -764,11 +812,25 @@ Per maggiori informazioni visita <a href="https://www.governo.it/it/articolo/dom
      <b><u>ATTENZIONE ! Verifica sempre che il colore del tuo comune corrisponda con il colore della tua regione.</u></b><br>
       <ul class="a">   
     
-      <li>NO COPRIFUOCO ATTIVO (Divieto di assembramento)<a href="https://www.interno.gov.it/sites/default/files/2020-10/modello_autodichiarazione_editabile_ottobre_2020.pdf" target="_blank">Autocertificazione</a> richiesta solo per spostamenti verso zone di altro colore<br><br></li>
+      <li>COPRIFUOCO ATTIVO (Dalle 23:30 alle 05:00) <a href="https://www.interno.gov.it/sites/default/files/2020-10/modello_autodichiarazione_editabile_ottobre_2020.pdf" target="_blank">Autocertificazione</a> richiesta solo per spostamenti verso zone di altro colore<br><br></li>
 
-       <li>NO Spostamenti tra regioni e province autonome fino al 27 marzo 2021 (ad eccezione di quelli dovuti a motivi di lavoro, salute o necessità)<br><br></li>
+       <li>NO Spostamenti tra regioni fino al 27 marzo 2021 (ad eccezione di quelli dovuti a motivi di lavoro, salute o necessità)<br><br></li>
 
-      <li>NO Spostamenti tra comuni (ad eccezione di quelli dovuti a motivi di lavoro, salute o necessità)<br><br></li>
+      <li>SI Attività motoria nel proprio comune di residenza/domicilio<br><br></li>
+          
+      <li>SI Parrucchieri e centri estetici<br><br></li>
+          
+      <li>SI Chiesa SI Musei (Da lunedì a venerdì)<br><br></li>
+          
+      <li>APERTI Bar, Gelateria e Pasticcerie fino alle ore 21:00 (asporto consentito)<br><br></li>
+          
+      <li>APERTI Ristoranti fino alle ore 23:00 (asporto consentito)<br><br></li>
+          
+      <li>APERTI Centri commerciali (Da lunedì a venerdì // CHIUSI prefestivi e festivi)<br><br></li>
+          
+      <li>CHIUSI Cinema, palestre e piscine<br><br></li>
+          
+      <li>APERTI Negozi <br><br></li>
      
    <li>IN AGGIORNAMENTO...<br><br></li>
 
@@ -778,7 +840,8 @@ Per maggiori informazioni visita <a href="https://www.governo.it/it/articolo/dom
     
     Per maggiori informazioni visita <a href="https://www.governo.it/it/articolo/domande-frequenti-sulle-misure-adottate-dal-governo/15638#zone" target="_blank"><i>www.governo.it</i></a><br><br><br>
     </div>
-<div class="testoModalF"><br><b><u>ZONA ARANCIONE RINFORZATA</b></u><br><br>
+
+    <div class="testoModalF"><br><b><u>ZONA ARANCIONE RINFORZATA</b></u><br><br>
 <b><u>ATTENZIONE ! Verifica sempre che il colore del tuo comune corrisponda con il colore della tua regione.</u></b><br>
 
 <ul class="a">    
