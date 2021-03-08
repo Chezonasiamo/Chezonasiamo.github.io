@@ -468,10 +468,11 @@ ul.a {
     height: 15vh;
     text-align: center;
     font-size: 13vw;
-    top: 37vh;
+    top: 38vh;
     text-transform: uppercase;
     font-weight: 500;
     position: fixed;
+    line-height: 45px;
 }
     
     #date {
